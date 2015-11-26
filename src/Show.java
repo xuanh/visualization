@@ -24,18 +24,6 @@ public class Show extends Application {
         primaryStage.show();
 
         byte[] bytes = readFile();
-        System.out.println("total number of bytes="+bytes.length);
-        int even = 0;
-        int odd = 0;
-        for(Byte b : bytes){
-            if(b%2==0){
-                even++;
-            }else{
-                odd++;
-            }
-        }
-        System.out.println("ODD="+odd);
-        System.out.println("even="+even);
 
         for (int i = 0; i < 10000; i++) {
             Color circleColor;
